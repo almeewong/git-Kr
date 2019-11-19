@@ -43,4 +43,10 @@ $(function(){
     $('.drop_down').change(function(){
         $(this).css('color','#fff');
     })
-})
+});
+/*-----針對驗證欄位，改變外框顏色-----*/
+function validateInputChangeBorderColor(formElement, inputId)
+{
+    $('#'+inputId).addClass('red-border');
+    formElement.find('input').not($('#'+inputId)).removeClass('red-border');
+}

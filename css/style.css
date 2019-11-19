@@ -12,7 +12,8 @@ body {
 	background: #1b191d;
 	position: relative;
 	margin: 0;
-	padding-bottom: 8rem;
+	padding-bottom: 10rem;
+	/* padding-bottom: 22rem; */
 	min-height: 100%;
 	font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -29,6 +30,10 @@ footer {
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+ul li
+{
+    /* text-align: left; */
 }
 .form-control:disabled{
     cursor: not-allowed;
@@ -467,7 +472,7 @@ hr.hrline {
 	margin: auto;
 	max-width: 400px;
 	width: 100%;
-	height: 250px;
+	/* height: auto; */
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	-webkit-animation-name: animatetop;
 	-webkit-animation-duration: 0.4s;
@@ -665,7 +670,7 @@ nav.bg-black {
 	display: block;
 	padding: 15px 20px 16px 20px;
 	margin-bottom: 2px;
-	color: #FFF;
+	color: #949494;
 	font-weight: 700;
 	border-bottom: #4e4e4e solid 1px;
 }
@@ -681,7 +686,7 @@ nav.bg-black {
 }
 .sidebar-nav ul li a:hover {
 	text-decoration: none;
-	color: #ccc;
+	color: #fff;
 }
 .sidebar-nav ul ul a {
 	display: block;
@@ -702,11 +707,11 @@ nav.bg-black {
 .footer-wrap {
 	padding-top: 25px;
 	background: #17161a;
-	color: #fff;
+	color: #737373;
 	font-size: 0.75em
 }
 .footer-wrap a {
-	color: #fff;
+	color: #737373;
 	font-size: 0.75em
 }
 .footer-wrap .list-inline, .footer-wrap ul li {
@@ -732,6 +737,7 @@ nav.bg-black {
 	margin-bottom: 5px;
 }
 .breadcrumb-title {
+    color: white;
 	padding-left: 15px;
 	margin-top: 20px;
     margin-bottom: 30px;
@@ -998,7 +1004,7 @@ header .header_pic{
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
 	background: #ffffff;
 }
-/*news-list.html*/
+/*coming_soon.html*/
 /*------------------------------------------------------------------------------*/
 a.news-wrap {
 	border-radius: 3px;
@@ -1201,9 +1207,9 @@ a.news-wrap:hover {
 
     border-radius: 40px;
     font-weight: bold;
-    color: #757575;
+    color: #a91220;
     border: #a80202 1px solid;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     word-break:break-all;
 }
 .alert-chat-right {
@@ -1213,7 +1219,7 @@ a.news-wrap:hover {
     font-weight: bold;
     color: #757575;
     border: #333 1px solid;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     word-break:break-all;
     background: #fff;
 }
@@ -1665,7 +1671,7 @@ padding: 0px 20px;
     color: #b90004;
 }
 .whitefont{
-    color: white;
+    color: white!important;
 }
 a img:hover{
     
@@ -1848,54 +1854,6 @@ a img:hover{
   background-color: #c23846;
 }
 
-/*-------------nav--------------*/
-/*-------------mobile top nav--------------*/
-/* .mobile_top_nav{
-    margin: px;
-    
-    border: 1px solid white;
-} */
-.mobile_top_nav p{
-    
-}
-.mobile_top_nav{
-    margin-bottom: 30px;
-}
-.mobile_top_nav{
-    /* height: 70px; */
-    /* padding:10px 0px; */
-    
-}
-.mobile_top_nav a{
-    /* padding:10px 30px; */
-    padding-bottom: 10px;
-    color: white;
-    /* width: 100%; */
-    height: 45px;
-    line-height: 18px;
-    /* border:1px solid white; */
-    text-decoration: none;
-    display: block;
-    /* padding: 0 20px; */
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-  
-  /* 其它瀏覽器降級方式：給定最大高度 */
-    max-height:48px;
-}
-/* .mobile_top_nav a:hover{
-    color: #b4b4b4;
-    border:1px solid #b4b4b4;
-} */
-.mobile_top_nav_active{
-    color: #ff0e1f!important;
-    border-bottom:3px solid #ff0e1f;
-}
-.mobile_top_nav_default{
-    border-bottom:3px solid #fff;
-}
 
 /*-------------fixed header--------------*/
 .fixed-header {
@@ -1907,7 +1865,7 @@ a img:hover{
     z-index: 2;
 }
 
-/*-------------間隔 (Spacing)--------------*/
+/*-------------間隔-外距 (Spacing)--------------*/
 .mt-05{
     margin-top: 5px;
 }
@@ -1923,6 +1881,9 @@ a img:hover{
 .mb-10{
     margin-bottom: 10px;
 }
+.mb-15{
+    margin-bottom: 15px;
+}
 .mb-20{
     margin-bottom: 20px;
 }
@@ -1932,13 +1893,20 @@ a img:hover{
 .mb-40{
     margin-bottom: 40px;
 }
-.mb-15{
-    margin-bottom: 15px;
+.mb-80{
+    margin-bottom: 80px;
 }
-
+/*-------------間隔-內距 (Spacing)--------------*/
+.pb-70{
+    padding-bottom: 70px;
+}
 /*-------------font--------------*/
 .message{
     font-size: 14px !important;/*為了層級高過 套件 .uploader .placeholder p的font-size定義*/
+    margin-top: 5px;
+}
+.message-prompt{
+    font-size: 12px;
     margin-top: 5px;
 }
 .font-18{
@@ -1994,8 +1962,11 @@ textarea:focus{
 } */
 
 /*--------hamburger menu--------*/
+.index_nav_ham{
+    z-index: 4;
+}
 .nav_ham{
-    z-index: 1;
+    z-index: 4;
 }
 .overlay-visible{
   position: fixed;
@@ -2005,6 +1976,7 @@ textarea:focus{
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
+    z-index: 3
     }
 .new_msg{
     width: 8px;

@@ -39,7 +39,7 @@
         width: 200px;
         color: white;
         top: 80%;
-        background-color: #CC4D44;
+        background-color: #b90004;
         border-radius: 50px;
         padding: 8px 20px;
     }
@@ -52,19 +52,38 @@
 
 }
 
+@media (max-width: 768px){
+    .pb-mob-70{
+        padding-bottom: 70px!important;
+    }
+}
+/*-- media height 為了footer寫的 --*/
+@media (max-height: 640px){
+    .for_footerhide{
+    padding-bottom: 250px;
+    }
+}
+@media (min-height: 641px){
+    .for_footerhide{
+        padding-bottom: 420px;
+    }
+}
 
 @media (max-width: 992px) {
     .header {
         position: relative;
-        background-image: url(../images/header_bg_mob.jpg);
+        /* background-image: url(../images/header_bg_mob.jpg); */
         width: 100%;
         height: 0;
         padding-bottom: 132%;
         background-size: 100%;
         background-repeat: no-repeat;
         display: block;
+        overflow: hidden;
     }
-
+    .header a:nth-of-type(1) img{
+        width: 100%;
+    }
     .black_circle {
         position: absolute;
         margin: auto;
@@ -103,7 +122,7 @@ background: -o-linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0)130%);
         color: white;
 
 
-        background-color: #CC4D44;
+        background-color: #b90004;
         border-radius: 50px;
         padding: 8px 20px;
     }
@@ -117,3 +136,56 @@ background: -o-linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0)130%);
     }
 
 }
+@media (max-width: 576px){
+    .verification{
+        width: 43vw;
+    }
+}
+
+/*----------btn----------*/
+@media only screen and (max-width: 768px){
+    .btn {
+	border-radius: 5px;
+	position: relative;
+	transition: all 0.15s ease-in-out;
+	display: inline-block;
+    width: 100%;
+    /* margin: 5px 1px; */
+}
+    /*-- 404 --*/
+    .page404 img{
+    width: 150px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 15px;
+}
+    .page404 p{
+    margin: 0;
+}
+    .page404 p:nth-of-type(1){
+    /* font-size: 16px; */
+}
+}
+@media only screen and (min-width: 768px){
+   .page404 img{
+    width: 150px;
+    margin-right: 10px;
+    border-right: 3px solid #ffffff;
+    padding-right: 15px;
+}
+    .page404 p{
+    margin: 0 0 0 10px;
+}
+    .page404 p:nth-of-type(1){
+    /* font-size: 16px; */
+}
+    .verification{
+    padding: .5rem 1rem;
+}
+}
+/*----------iphone5 / SE----------*/
+
+
+
+
+

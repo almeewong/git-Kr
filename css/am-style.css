@@ -1,0 +1,13 @@
+/*-------AM-grid-------*/
+@media (min-width:768px){
+    .col-md-10_5{
+        max-width: 85%;
+    }
+}
+.col-md-10_5{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

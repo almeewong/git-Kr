@@ -213,7 +213,6 @@ background-position: center top;
     /* font-weight: 600; */
 }
 .btn-2br{
-    width: 100%;
     height: 38px;
     font-size: 9px;
     line-height: 15px;
@@ -223,3 +222,8 @@ background-position: center top;
        /* placeholder字体大小  */
        font-size: 12px;
     }
+/*--<a>-red--*/
+.a-red{
+    background-color: #b90004;
+    color: white;
+}

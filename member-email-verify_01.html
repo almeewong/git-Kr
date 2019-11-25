@@ -66,7 +66,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                 <li class="breadcrumb-item active"><a href="edit-account.html">회원센터</a></li>
-                <li class="breadcrumb-item active">정보인증</li>
+                <li class="breadcrumb-item active">이메일 인증</li>
             </ol>
 
 
@@ -105,47 +105,60 @@
             </div>
 
             <div class="col-md-12 col-lg-8 col-xs-12">
-                <!--驗證資料區塊開始-->
-                <div class="breadcrumb-title">정보인증
-                    <!-- 會員資料-->
+                <div class="breadcrumb-title">이메일 인증
+                    <!--Email驗證-->
                 </div>
-                <div class="contact-form">
-                    <!--分區連結 active 頁面 btn-black 外加 disabled, 非 active 頁面 btn-default -->
-                    <div class="nav contact-nav col-sm-12 justify-content-between justify-content-sm-start">
-
-                        <a href="javascript:void();" class="btn-sm btn-danger mgt10 mgb10 nav-link  bgred disabled verification text-center">정보인증<!-- 資料驗證 --></a>
-                        <a href="reset-password-no-verified.html" class="btn-sm btn-danger mgt10 mgb10 nav-link verification text-center">비밀번호 변경﻿
-                            <!-- 實名認證 --></a>
-                    </div>
-                    <!-- <div class="clearfix"></div> -->
-                    <!--分區連結-->
-
-                    <!--說明區-->
-                    <div class="row">
-                        <!--信箱驗證-->
-                        <div class=" col-md-12 mg10 mail-form">
-                            <label class="pdl10"><i class="mr-1"><img src="images/phonecheck.png" alt="" width="20"></i> 휴대폰 인증</label>
-
-                            <!-- 已經驗證後呈現資料 -->
-                            <p class="alert alert-success mg10 fin-account"> 3333***6666</p>
-                            <!--尚未驗證時出現-->
+                <div class="row">
+                    <div class="contact-form">
+                        <div class="col-12">
+                            <label for="">인증메일이 <span class="red">xxx@xxx.com </span>으로 발송되었습니다. 메일에 첨부된 인증 링크를 클릭해주세요. 인증유효시간 : <span class="red">20xx/xx/xx xx:xx:xx</span> 까지.</label>
+                            <label for="">이메일이 인증된 계정이 비밀번호 재설정 기능을 이용할 수 있습니다. 일부 이메일의 경우 설정에 따라 스팸 메일함으로 자동 이동되는 경우가 있으니 참고 부탁드립니다.</label>
+                            <label for="">인증메일을 받지 못하신 경우[인증메일 재발송]을 클릭해 주세요.</label>
                         </div>
-                        <div class=" col-md-12 mg10 mail-form">
-                            <label class="pdl10"><i class="mr-1"><img src="images/emailcheck.png" alt="" width="20"></i> 이메일</label>
-                            <!-- 已經驗證後呈現資料 -->
-                            <p class="alert alert-success mg10 fin-account"> sus******@wegam**.com.tw</p>
-                            <!--尚未驗證時出現-->
-                            <p class="mg10"><a href="email-verify.html#main" class="btn btn-danger col-12 col-sm-4">이메일<!-- 尚未驗證 --><i class="fas fa-angle-double-right pl-1"></i></a></p>
+                        <div class="col-md-12 mt-3 mb-3">
+                            <label class=" text-white">이메일입력
+                                <!--輸入您的電子信箱--></label>
+                            <input type="email" class="form-control in_color">
+                            <p class="red message mt-2"><i class="fas fa-exclamation-circle mr-1"></i>유효한 이메일을 입력해주세요.
+                                <!--錯誤訊息提示-->
+                            </p>
+                        </div>
+                        <div class="col-sm-12 text-center">
+
+
+                            <button id="myBtn" class="btn btn-primary1 mt-30 mb-40 pl-sm-5 pr-sm-5" type="submit">인증메일 재발송
+                                <!--重發送驗證信--></button>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
 
     <!-- /.container -->
+    <!-- Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="container">
+            <div class="row">
+                <div class="modal-content col-11 col-sm-0"> <span class="close">×</span>
+                    <div class="container">
+                        <form id="contact" action="" method="post">
+                            <center>
+                                <p class="pt-5 pb-5">인증 메일을 이미 요청하셨습니다. 메일 발송에는 약간의 시간이 소요될 수 있으니 잠시 후 다시 요청해주세요.</p>
+                                <!--您剛才已申請過忘記密碼的重設密碼功能，簡訊或電子郵件傳送可能略有延誤，請耐心等候。-->
+                                <!--（20xx/xx/xx xx:xx後可再申請重設）-->
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
     <!-- Footer -->
     <footer class="py-4 footer-wrap pb-mob-70">
         <div class="container">
@@ -181,4 +194,31 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="js/all.js"></script>
     <script src="js/all_Us.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body></html>

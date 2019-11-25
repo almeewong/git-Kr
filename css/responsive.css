@@ -63,7 +63,7 @@
     padding-bottom: 250px;
     }
 }
-@media (min-height: 641px){
+@media screen and (min-height: 641px) and (max-width:520px){
     .for_footerhide{
         padding-bottom: 420px;
     }

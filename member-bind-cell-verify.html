@@ -18,15 +18,35 @@
 <link href="css/slider.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style_Us.css" rel="stylesheet">
+<link href="css/am-style.css" rel="stylesheet">
 <link rel="stylesheet" href="css/responsive.css">
-<!-- hint提示文字 CSS -->
-<link rel="stylesheet" href="css/hint.css">
 <!-- ico 圖示-->
 <link href="images/common/favicon.ico" rel="shortcut icon" />
+<style>
+    /* 隱藏or顯示input password */
+    .input-group-addon {
+        width: 35px;
+        /* background-color: #e9ecef; */
+        border-radius: 0 .25rem .25rem 0;
+        float: right;
+        position: absolute;
+        top: 32px;
+        bottom: 0;
+        right: 0;
+    }
+    .input-group-addon a{
+        
+    }
+    .input-group-addon i {
+        margin-top: 11px;
+        color: #ff0e1f;
+    }
+    
+</style>
+
 </head>
 <body>
 <!-- Navigation -->
-<!--此區塊webview需隱藏-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black nav_ham fixed-header">
   <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
     <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -37,53 +57,55 @@
         <li class="nav-item"> <a class="nav-link nav-style ga_header_faq" href="faq.html">고객 센터</a> </li>
         <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">WG 소개</a> </li>
       </ul>
-      <ul class="navbar-nav ml-auto" style="display: none">
-        <li class="nav-item"> <a class="nav-link nav-border" href="#">Create account</a> </li>
-        <li class="nav-item"> <a class="nav-link nav-border" href="#">Login</a> </li>
-      </ul>
-	  <ul class="navbar-nav ml-auto">
-        <li class="nav-item account_pic hint--bottom" data-hint="efae6eafb2090378ad303d60b4dea208"> 
-			<span class="nav-link loninsize d-flex align-items-center  " href="#">
-				<span class="displyin mr-2 mr-lg-0"><img src="images/nav_icon_wg.png" alt=""  ></span>
-				<span class="displyin mt-sm-1">안녕하세요.<!--您好--></span>
-				<span class="displyin d-lg-none ml-2">efae6eafb2090378ad303d60b4dea208 </span>
-				 
-			</span>
-		</li>
-		<li class="nav-item"> <a class="nav-link nav-border mt-1" href="edit-account.html">회원센터<span class="circle-gray"></span></a> </li>
-        <li class="nav-item"> <a class="nav-link nav-border mt-1" href="coming_soon.html">로그아웃</a> </li>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link nav-border" href="coming_soon.html">가입</a> </li>
+        <li class="nav-item"> <a class="nav-link nav-border" href="login_form.html">로그인</a> </li>
       </ul>
     </div>
   </div>
 </nav>
-<!--/此區塊webview需隱藏-->
 
 <!-- Page Content -->
-<div class="container mt-5 mb-5">
+<div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <center>
-       <h3 class="whitefont mb-3">Submission Successful!<!--提問完成--></h3>
-        <div class="justify-content-center"> <img src="images/banner-700x350.jpg" class="img-fluid"> </div>
-        <div class="ask-finish-text">
-          <p class="mb-30 col-lg-6">Your question has been successfully submitted to Customer Support, please be patient and wait for our reply. You will receive an Email notification once Customer Support replied.<!--客服人員將儘速為您處理問題並回覆，敬請耐心稍候。--></p>
-          <button class="btn btn-primary1" type="button"  onclick="location.href='request-list.html'">Go to 문의내역<!--前往客服紀錄--></button>
+    <div class="col-md-12 d-flex justify-content-center">
+      
+        <div class="col-lg-8 registered-wrap mt-5 mobile-mar0 text-center">
+
+        <h3 class="mt-30 mb-20">계정연동<!-- 綁定帳號 --></h3>
+       
+       <div class="form-row d-flex justify-content-center">
+       
+        <div class="form-group col-md-7 text-left">
+            <input type="text" class="form-control in_color" id="formGroupExampleInput" placeholder="휴대폰 번호를 입력하세요">
+            <!--請輸入您的手機號碼--> 
         </div>
-      </center>
+        <div class="form-group col-md-3">
+            <button class="col btn btn-secondary_yellow">인증번호요청<!--索取驗證碼--></button>
+            <button class="col btn btn-secondary_yellow btn-2br" disabled>인증번호 재발송 요청<br>（04:59）</button>
+        </div>
+        <div class="form-group col-md-10 text-left">
+            <input type="text" class="form-control in_color" id="formGroupExampleInput" placeholder="발급된 인증번호를 입력하세요">
+            <!--請輸入您收到的驗證碼--> 
+        </div>
+        <p class="red message mt-2"><i class="fas fa-exclamation-circle mr-1"></i>인증번호가 정확하지 않습니다.<!--錯誤訊息提示--></p>
+        </div>
+          <div class="clearfix"></div>
+          <button class="btn btn-primary1 mt-5 mb-3 pl-sm-5 pr-sm-5 ga_login_wg-login" type="submit">계정연동<!--綁定帳號--></button>
+        </div>
+      
     </div>
   </div>
+  <!-- /.container --> 
 </div>
-<!-- /.container --> 
-
 <!-- Footer -->
-<!--此區塊webview需隱藏-->
 <footer class="py-4 footer-wrap">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 text-md-left text-sm-center mobile-text-center"> <img src="images/s_wegame_logo.png">
         <p class="list-inline"> © WeGames Korea Co., Ltd. All Rights Reserved.</p>
       </div>
-      <div class="col-lg-6 col-md-6  ">
+      <div class="col-lg-6 col-md-6">
         <ul class="text-md-right text-sm-center mobile-text-center">
                         <li><a href="terms.html">이용약관</a></li>
                         <li>|</li>
@@ -96,11 +118,9 @@
   </div>
 <!--/此區塊webview需隱藏-->
   
-  <!--go top-->
-<a href="" id="gotop">
-   <i class="fa fa-angle-up"></i>
-</a>
- 
+<!--go top-->
+
+  
   <!-- /.container --> 
 </footer>
 <div class="overlay"></div><!--控制點選hamburger後，將遮罩下方body部分，讓使用者著重在ham選單裡的項目-->
@@ -108,5 +128,15 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="js/all.js"></script>
 <script src="js/all_Us.js"></script>
+<!-- <script>
+    
+    
+    $('button').on('click', function() {
+  var $inp = $('input');  
+  $inp.attr('type') === 'password' ? 
+    $inp.attr('type', 'text') 
+  : $inp.attr('type', 'password')
+});
+</script> -->
 </body>
 </html>

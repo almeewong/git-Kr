@@ -70,7 +70,7 @@
 <!-- 麵包屑結束 -->
         <div class="container">
          <div class="row">
-            <div class="col-12 d-md-none nav_bottom">
+            <div class="col-12 d-xl-none nav_bottom">
                  <div class="form-row mob_bottom_nav mobile_top_nav align-items-center tab_member">
         <div class="col-4 text-center "><a href="edit-account.html" class="mobile_top_nav_default">회원센터</a></div>
         <div class="col-4 text-center"><a href="javascript:void(0)" class="mobile_top_nav_active">충전내역</a></div>
@@ -80,7 +80,7 @@
         </div>
         
   <div class="row">
-    <div class="col-sm-12 col-lg-4 sidebar-nav d-none d-md-block">
+    <div class="col-sm-12 col-lg-4 sidebar-nav d-none d-xl-block">
       <ul>
         <!--狀況說明 : 提示資料大於1-9筆-->
         <li><a href="edit-account.html">회원센터</a></li>
@@ -92,7 +92,7 @@
 <span class="circle-gray"></span> </a></li>
       </ul>
     </div>
-    <div class="col-sm-12 col-lg-8 padbot80">
+    <div class="col-sm-12  col-xl-8 padbot80">
      <div class="breadcrumb-title">충전내역<!-- 儲值紀錄--></div>
       <div class="form-group row">
         <div class="col-md-12 text-left">
@@ -100,8 +100,8 @@
         <div class="col-md-6">
             <div class="">
                 <select class="form-control drop_down">
-				 <option>Last 30 Days</option>
-				 <option>30 ~ 180 Days</option>
+				 <option>최근 1개월</option>
+				 <option>1개월이상 6개월까지</option>
                 </select>
             </div>
         </div>
@@ -109,13 +109,13 @@
         <div class="col-md-4 mobile-mt3">
              <div class="form-group">
              <select class="form-control drop_down">
-              <option>All Games</option>
+              <option>전체</option>
               <option>RO Revival</option>
              </select>
           </div>
         </div>
         <div class="col-md-2">
-        <button id="myBtn" class="btn btn-primary1 col-12" type="submit">Search<!--搜索--></button>
+        <button id="myBtn" class="btn btn-primary1 col-12" type="submit">조회<!--搜索--></button>
         </div>
         </div>
           <!-- <div class="width60 displyin">
@@ -135,100 +135,100 @@
            -->
         </div>
       </div>
-	  <label class="text-white">Total<span class="red"> 19 </span>record, showing 1-5 record</label>
+	  <label class="text-white">총<span class="red"> 19 </span>건, 제 1-5 건</label>
       <div class="table-responsive-vertical shadow-z-1"> 
         <!-- Table starts here -->
         <table id="table" class="table table-hover table-mc-light-blue">
           <thead>
             <tr>
-              <th>충전내역 Time</th>
-              <th>충전내역 Order Number</th>
-              <th>Game Name</th>
-              <th>Server</th>
-			  <th>Character</th>
-              <th>충전내역 Method</th>
-              <th>충전내역 Amount</th>
-              <th>Exchanged Game Currency</th>
-			  <th>Status</th>
+              <th>결제일시<!--儲值時間--></th>
+              <th>주문번호<!--儲值單號--></th>
+              <th>게임명<!--遊戲名稱--></th>
+              <th>서버<!--伺服器--></th>
+			  <th>캐릭터<!--角色--></th>
+              <th>결제수단<!--儲值管道--></th>
+              <th>결제금액<!--儲值金額--></th>
+              <th>게임캐시<!--遊戲幣--></th>
+			  <th>상태<!--狀態--></th>
             </tr>
           </thead>
           <tbody>
             <tr class="gray_01">
               <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
               <td data-title="충전내역 Order Number">201612280002158</td>
-              <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
+              <td data-title="Game Name">주사위의 잔영</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
               <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
+              <td data-title="충전내역 Amount">200,000</td>
               <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Successful</td>
+			  <td data-title="Status">성공</td>
             </tr>
             <tr class="gray_01">
               <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
               <td data-title="충전내역 Order Number">201612280002158</td>
-              <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
+              <td data-title="Game Name">주사위의 잔영</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
               <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
+              <td data-title="충전내역 Amount">200,000</td>
               <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Unsuccessful</td>
+			  <td data-title="Status">실패</td>
+            </tr>
+			<tr class="gray_01">
+              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
+              <td data-title="충전내역 Order Number">201612280002158</td>
+              <td data-title="Game Name">주사위의 잔영</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
+              <td data-title="충전내역 Method">App Store</td>
+              <td data-title="충전내역 Amount">200,000</td>
+              <td data-title="Exchanged Game Currency">10000</td>
+			  <td data-title="Status">일시중단</td>
+            </tr>
+			<tr class="gray_01">
+              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
+              <td data-title="충전내역 Order Number">201612280002158</td>
+              <td data-title="Game Name">주사위의 잔영</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
+              <td data-title="충전내역 Method">App Store</td>
+              <td data-title="충전내역 Amount">200,000</td>
+              <td data-title="Exchanged Game Currency">10000</td>
+			  <td data-title="Status">일시중단</td>
+            </tr>
+			<tr class="gray_01">
+              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
+              <td data-title="충전내역 Order Number">201612280002158</td>
+              <td data-title="Game Name">주사위의 잔영</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
+              <td data-title="충전내역 Method">App Store</td>
+              <td data-title="충전내역 Amount">200,000</td>
+              <td data-title="Exchanged Game Currency">10000</td>
+			  <td data-title="Status">일시중단</td>
+            </tr>
+			<tr class="gray_01">
+              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
+              <td data-title="충전내역 Order Number">201612280002158</td>
+              <td data-title="Game Name">주사위의 잔영</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
+              <td data-title="충전내역 Method">App Store</td>
+              <td data-title="충전내역 Amount">200,000</td>
+              <td data-title="Exchanged Game Currency">10000</td>
+			  <td data-title="Status">일시중단</td>
             </tr>
 			<tr class="gray_01">
               <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
               <td data-title="충전내역 Order Number">201612280002158</td>
               <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
+              <td data-title="Server">1서버 [우리]</td>
+			  <td data-title="Character">치뿌뿌에 뽀로로</td>
               <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
+              <td data-title="충전내역 Amount">200,000</td>
               <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Incomplete</td>
-            </tr>
-			<tr class="gray_01">
-              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
-              <td data-title="충전내역 Order Number">201612280002158</td>
-              <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
-              <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
-              <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Incomplete</td>
-            </tr>
-			<tr class="gray_01">
-              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
-              <td data-title="충전내역 Order Number">201612280002158</td>
-              <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
-              <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
-              <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Incomplete</td>
-            </tr>
-			<tr class="gray_01">
-              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
-              <td data-title="충전내역 Order Number">201612280002158</td>
-              <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
-              <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
-              <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Incomplete</td>
-            </tr>
-			<tr class="gray_01">
-              <td data-title="충전내역 Time">28/12/2016 19:09:27</td>
-              <td data-title="충전내역 Order Number">201612280002158</td>
-              <td data-title="Game Name">RO Revival</td>
-              <td data-title="Server">s34-Odin</td>
-			  <td data-title="Character">ABCD</td>
-              <td data-title="충전내역 Method">App Store</td>
-              <td data-title="충전내역 Amount">5000</td>
-              <td data-title="Exchanged Game Currency">10000</td>
-			  <td data-title="Status">Incomplete</td>
+			  <td data-title="Status">일시중단</td>
             </tr>
           </tbody>
         </table>

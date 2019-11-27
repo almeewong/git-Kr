@@ -50,6 +50,7 @@ ul li
 .record_page{
 	display: none;
 }
+/*--color-font--*/
 .red {
 	color: #ff0e1f;
 }
@@ -58,6 +59,12 @@ ul li
 }
 .green {
 	color: #2ecc71;
+}
+.white{
+    color: white;
+}
+.gray{
+    color: #949494;
 }
 hr.hrline {
 	border-top: 1px dotted #8c8b8b;
@@ -1011,12 +1018,13 @@ a.news-wrap {
 	padding: 15px;
 	margin: 0px 0 35px;
 	background-color: #171517;
+    	color: #fff;
 	display: block;
     cursor: pointer;
 }
 a.news-wrap:hover {
 	text-decoration: none;
-	color: #333
+    -webkit-filter:brightness(1.5);
 }
 .news-right {
 	color: #fff;
@@ -1043,6 +1051,10 @@ a.news-wrap:hover {
 	margin-bottom: 10px;
 	font-size: 1.25em;
 }
+.new-date{
+    color: #949494;
+    font-size: 16px;
+}
 /*news.html*/
 /*------------------------------------------------------------------------------*/
 .news_page {
@@ -1051,6 +1063,7 @@ a.news-wrap:hover {
 }
 .newspage_title {
 	font-size: 1.125em;
+    font-weight: 600;
 }
 .newspage_date {
 	padding: 5px 10px;
@@ -1868,6 +1881,9 @@ a img:hover{
 /*-------------間隔-外距 (Spacing)--------------*/
 .mt-05{
     margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
 }
 .mt-30{
     margin-top: 30px;

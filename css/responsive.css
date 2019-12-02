@@ -183,6 +183,12 @@ background: -o-linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0)130%);
     padding: .5rem 1rem;
 }
 }
+/*控制payment-list表格在768-1200px間不過度換行*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .payment-list.container{
+        max-width: 960px;
+    }
+}
 /*----------iphone5 / SE----------*/
 
 

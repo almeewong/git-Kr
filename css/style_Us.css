@@ -267,3 +267,20 @@ input::-webkit-input-placeholder {
     background-color: #b90004;
     color: white;
 }
+
+/*login-form*/
+.btn.btn-google .google,.btn.btn-fb .fb{
+    display: inline-block;
+    list-style: none;
+    width: 24px;
+    height: 24px;
+    /* background: url(../images/google.svg) no-repeat; */
+}
+.btn.btn-google{
+    color: white;
+    background-color: #D7402A;
+}
+.btn.btn-fb{
+    color: white;
+    background-color: #4267b2;
+}

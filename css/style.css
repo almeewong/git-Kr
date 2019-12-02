@@ -1175,6 +1175,8 @@ a.news-wrap:hover {
 /*login.html*/
 /*------------------------------------------------------------------------------*/
 .login_bottom_ul_amrc {
+    color: #737373;
+    font-size: 0.75em;
 	list-style-type: none;
 	padding: 0px;
 	display: table;

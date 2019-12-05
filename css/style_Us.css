@@ -284,3 +284,6 @@ input::-webkit-input-placeholder {
     color: white;
     background-color: #4267b2;
 }
+.pic-wrong{
+    width: 200px;
+}

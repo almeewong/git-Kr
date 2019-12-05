@@ -1,111 +1,218 @@
+
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title></title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<meta name="author" content="" />
-<!-- Mobile Specific Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!-- styles -->
-<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-<!--共用CSS-->
-<link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link href="css/slider.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/style_Us.css" rel="stylesheet">
-<link rel="stylesheet" href="css/responsive.css">
-<!-- hint提示文字 CSS -->
-<link rel="stylesheet" href="css/hint.css">
-<!-- ico 圖示-->
-<link href="images/common/favicon.ico" rel="shortcut icon" />
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <!--共用CSS-->
+    <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/sprite-icon-ui.css" />
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_Us.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- hint提示文字 CSS -->
+    <link rel="stylesheet" href="css/hint.css">
+    <!-- ico 圖示-->
+    <link href="images/common/favicon.ico" rel="shortcut icon" />
 </head>
+
 <body>
-<!-- Navigation -->
-<!--此區塊webview需隱藏-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black nav_ham fixed-header">
-  <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
-    <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav">
-        <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">게임 로비</a> </li>
-        <li class="nav-item "> <a class="nav-link nav-style" href="coming_soon.html">최신 소식</a> </li>
-        <li class="nav-item"> <a class="nav-link nav-style ga_header_faq" href="faq.html">고객 센터</a> </li>
-        <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">WG 소개</a> </li>
-      </ul>
-      <ul class="navbar-nav ml-auto" style="display: none">
-        <li class="nav-item"> <a class="nav-link nav-border" href="#">Create account</a> </li>
-        <li class="nav-item"> <a class="nav-link nav-border" href="#">Login</a> </li>
-      </ul>
-	  <ul class="navbar-nav ml-auto">
-        <li class="nav-item account_pic hint--bottom" data-hint="efae6eafb2090378ad303d60b4dea208"> 
-			<span class="nav-link loninsize d-flex align-items-center  " href="#">
-				<span class="displyin mr-2 mr-lg-0"><img src="images/nav_icon_wg.png" alt=""  ></span>
-				<span class="displyin mt-sm-1">안녕하세요.<!--您好--></span>
-				<span class="displyin d-lg-none ml-2">efae6eafb2090378ad303d60b4dea208 </span>
-				 
-			</span>
-		</li>
-		<li class="nav-item"> <a class="nav-link nav-border mt-1" href="edit-account.html">회원센터<span class="circle-gray"></span></a> </li>
-        <li class="nav-item"> <a class="nav-link nav-border mt-1" href="coming_soon.html">로그아웃</a> </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!--/此區塊webview需隱藏-->
 
-<!-- Page Content -->
-<div class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-sm-12">
-      <center>
-       <h3 class="whitefont mb-3">이메일 인증이 완료되었습니다!<!--已完成Email驗證！--></h3>
-        <div class="justify-content-center"> <img src="images/banner-700x350.jpg" class="img-fluid"> </div>
-        <div class="mt-30 ask-finish-text">
-         <a href="login_form.html" class="a-red btn pl-sm-5 pr-sm-5">회원센터 바로가기<!--前往會員中心--></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black nav_ham fixed-header">
+        <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+            <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">게임 로비</a> </li>
+                    <li class="nav-item "> <a class="nav-link nav-style" href="coming_soon.html">최신 소식</a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-style ga_header_faq" href="faq.html">고객 센터</a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">WG 소개</a> </li>
+                </ul>
+                <ul class="navbar-nav ml-auto" style="display: none">
+                    <li class="nav-item"> <a class="nav-link nav-border" href="#">Create account</a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-border" href="#">Login</a> </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item account_pic hint--bottom" data-hint="efae6eafb2090378ad303d60b4dea208">
+                        <span class="nav-link loninsize d-flex align-items-center  " href="#">
+                            <span class="displyin mr-2 mr-lg-0"><img src="images/nav_icon_wg.png" alt=""></span>
+                            <span class="displyin mt-sm-1">안녕하세요.
+                                <!--您好--></span>
+                            <span class="displyin d-lg-none ml-2">efae6eafb2090378ad303d60b4dea208 </span>
+
+                        </span>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link nav-border mt-1" href="edit-account.html">회원센터<span class="circle-gray"></span></a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-border mt-1" href="coming_soon.html">로그아웃</a> </li>
+                </ul>
+            </div>
         </div>
-      </center>
-    </div>
-  </div>
-</div>
-<!-- /.container --> 
+    </nav>
 
-<!-- Footer -->
-<!--此區塊webview需隱藏-->
-<footer class="py-4 footer-wrap">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 text-md-left text-sm-center mobile-text-center"> <img src="images/s_wegame_logo.png">
-        <p class="list-inline"> © WeGames Korea Co., Ltd. All Rights Reserved.</p>
-      </div>
-      <div class="col-lg-6 col-md-6  ">
-        <ul class="text-md-right text-sm-center mobile-text-center">
+    <div class="breadcrumb-wrap mt-3">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class="breadcrumb-item active"><a href="edit-account.html">회원센터</a></li>
+                <li class="breadcrumb-item active">이메일 인증</li>
+            </ol>
+
+
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+    <!-- 麵包屑結束 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-md-none nav_bottom">
+                <div class="form-row mob_bottom_nav mobile_top_nav align-items-center tab_member">
+                    <div class="col-4 text-center"><a href="javascript:void(0)" class="mobile_top_nav_active">회원센터</a></div>
+                    <div class="col-4 text-center"><a href="payment-list.html" class="mobile_top_nav_default">충전내역</a></div>
+                    <div class="col-4 text-center"><a href="request-list.html" class="mobile_top_nav_default">문의내역</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row for_footerhide">
+            <div class="col-sm-12 col-lg-4 sidebar-nav d-none d-md-block">
+                <ul>
+                    <!--狀況說明 : 提示資料大於1-9筆-->
+                    <li><a href="javascript:void();" class="active whitefont">회원센터</a></li>
+                    <!--狀況說明 : 等級不足時出現的情況-->
+                    <li><a href="payment-list.html">충전내역<span class="circle-gray"></span> </a> </li>
+                    <!--狀況說明 : 提示資料大於10筆以上-->
+                    <li><a href="request-list.html">문의내역
+
+                            <span class="circle-gray"></span> </a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-12 col-lg-8 col-xs-12">
+                <div class="breadcrumb-title">이메일 인증
+                    <!--Email驗證-->
+                </div>
+                <div class="row">
+                    <div class="contact-form">
+                        <div class="col-12">
+                            <label for="">인증메일이 <span class="red">xxx@xxx.com </span>으로 발송되었습니다. 메일에 첨부된 인증 링크를 클릭해주세요. 인증유효시간 : <span class="red">20xx/xx/xx xx:xx:xx</span> 까지.</label>
+                            <label for="">이메일이 인증된 계정이 비밀번호 재설정 기능을 이용할 수 있습니다. 일부 이메일의 경우 설정에 따라 스팸 메일함으로 자동 이동되는 경우가 있으니 참고 부탁드립니다.</label>
+                            <label for="">인증메일을 받지 못하신 경우[인증메일 재발송]을 클릭해 주세요.</label>
+                        </div>
+                        <div class="col-sm-12 text-center">
+
+
+                            <button id="myBtn" class="btn btn-primary1 mt-30 mb-40 pl-sm-5 pr-sm-5" type="submit">인증메일 재발송
+                                <!--重發送驗證信--></button>
+                            <button id="myBtn" class="btn btn-primary1 mt-30 mb-40 pl-sm-5 pr-sm-5" type="submit" disabled>인증메일 재발송
+                                <!--重發送驗證信--></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /.container -->
+    <!-- Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="container">
+            <div class="row">
+                <div class="modal-content col-11 col-sm-0"> <span class="close">×</span>
+                    <div class="container">
+                        <form id="contact" action="" method="post">
+                            <center>
+                                <p class="pt-5 pb-5">인증 메일을 이미 요청하셨습니다. 메일 발송에는 약간의 시간이 소요될 수 있으니 잠시 후 다시 요청해주세요.</p>
+                                <!--您剛才已申請過忘記密碼的重設密碼功能，簡訊或電子郵件傳送可能略有延誤，請耐心等候。-->
+                                <!--（20xx/xx/xx xx:xx後可再申請重設）-->
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="py-4 footer-wrap pb-mob-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-md-left text-sm-center mobile-text-center"> <img src="images/s_wegame_logo.png">
+                    <p class="list-inline"> © WeGames Korea Co., Ltd. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 col-md-6  ">
+                    <ul class="text-md-right text-sm-center mobile-text-center">
                         <li><a href="terms.html">이용약관</a></li>
                         <li>|</li>
-                        <li><a href="privacy.html">개인정보 처리방침<!--隱私權政策--></a></li>
+                        <li><a href="privacy.html">개인정보 처리방침
+                                <!--隱私權政策--></a></li>
                         <li>|</li>
-                        <li><a href="privacy.html">게임운영정책<!--遊戲營運政策--></a></li>
+                        <li><a href="privacy.html">게임운영정책
+                                <!--遊戲營運政策--></a></li>
                     </ul>
-      </div>
-    </div>
-  </div>
-<!--/此區塊webview需隱藏-->
-  
-  <!--go top-->
-<a href="" id="gotop">
-   <i class="fa fa-angle-up"></i>
-</a>
- 
-  <!-- /.container --> 
-</footer>
-<div class="overlay"></div><!--控制點選hamburger後，將遮罩下方body部分，讓使用者著重在ham選單裡的項目-->
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="js/all.js"></script>
-<script src="js/all_Us.js"></script>
-</body>
-</html>
+                </div>
+            </div>
+        </div>
+        <!--/此區塊webview需隱藏-->
+
+        <!--go top-->
+        <a href="" id="gotop">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+        <!-- /.container -->
+    </footer>
+    <div class="overlay"></div>
+    <!--控制點選hamburger後，將遮罩下方body部分，讓使用者著重在ham選單裡的項目-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/all_Us.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body></html>

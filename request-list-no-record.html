@@ -13,20 +13,21 @@
     <!-- styles -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
     <!--共用CSS-->
     <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="css/table.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/style_Us.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_Us.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- hint提示文字 CSS -->
     <link rel="stylesheet" href="css/hint.css">
     <!-- ico 圖示-->
-    <link href="images/com0mon/favicon.ico" rel="shortcut icon" />
+    <link href="images/common/favicon.ico" rel="shortcut icon" />
 </head>
 
-<body class="payment-list_no-record">
+<body>
     <!-- Navigation -->
+    <!--此區塊webview需隱藏-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black nav_ham fixed-header">
         <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
             <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -57,6 +58,7 @@
             </div>
         </div>
     </nav>
+    <!--/此區塊webview需隱藏-->
 
 
     <div class="breadcrumb-wrap mt-3">
@@ -65,10 +67,11 @@
                 <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                 <li class="breadcrumb-item"><a href="edit-account.html">회원센터
                         <!-- 會員專區 --></a></li>
-                <li class="breadcrumb-item active">충전내역
+                <li class="breadcrumb-item active">문의내역
                     <!-- 儲值紀錄 -->
                 </li>
             </ol>
+
         </div>
     </div>
     <!-- Page Content -->
@@ -78,8 +81,8 @@
             <div class="col-12 d-xl-none nav_bottom">
                 <div class="form-row mob_bottom_nav mobile_top_nav align-items-center tab_member">
                     <div class="col-4 text-center "><a href="edit-account.html" class="mobile_top_nav_default">회원센터</a></div>
-                    <div class="col-4 text-center"><a href="javascript:void(0)" class="mobile_top_nav_active">충전내역</a></div>
-                    <div class="col-4 text-center"><a href="request-list.html" class="mobile_top_nav_default">문의내역</a></div>
+                    <div class="col-4 text-center"><a href="payment-list.html" class="mobile_top_nav_default">충전내역</a></div>
+                    <div class="col-4 text-center"><a href="javascript:void(0)" class="mobile_top_nav_active">문의내역</a></div>
                 </div>
             </div>
         </div>
@@ -88,21 +91,22 @@
             <div class="col-sm-12 col-lg-4 sidebar-nav d-none d-xl-block">
                 <ul>
                     <!--狀況說明 : 提示資料大於1-9筆-->
-                    <li><a href="edit-account.html">회원센터</a></li>
+                    <li><a href="edit-account.html" class="">회원센터</a></li>
                     <!--狀況說明 : 等級不足時出現的情況-->
-                    <li><a href="javascript:void();" class="active whitefont">충전내역<span class="circle-gray"></span> </a> </li>
+                    <li><a href="payment-list.html">충전내역<span class="circle-gray"></span> </a> </li>
                     <!--狀況說明 : 提示資料大於10筆以上-->
-                    <li><a href="request-list.html">문의내역
-
-                            <span class="circle-gray"></span> </a></li>
+                    <li><a href="javascript:void(0)" class="active whitefont">문의내역<span class="circle-gray"></span> </a></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-lg-8 padbot80">
-                <div class="breadcrumb-title">충전내역
-                    <!-- 儲值紀錄-->
+
+                <div class="breadcrumb-title">문의내역
+                    <!-- 客服紀錄-->
                 </div>
+
                 <div class="form-group row">
                     <div class="col-md-12 text-left">
+
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="">
@@ -126,39 +130,18 @@
                                     <!--搜索--></button>
                             </div>
                         </div>
-                        <!-- <div class="width60 displyin">
-            <select class="form-control  drop_down">
-                          <option>ประวัติในช่วง 1 เดือนนี้</option>
-                          <option>ประวัติเติมเงิน 1 เดือนขึ้นไปถึง 6 เดือน</option>
-            </select>
-          </div>
-          <div class="width30 displyin mobile-mt3">
-            <select class="form-control  drop_down">
-                          <option>เกมทั้งหมด</option>
-                          <option>RO Revival</option>
-            </select>
-          </div>
-          
-            <button id="myBtn" class="btn btn-primary1 mt-3 mt-md-0" type="submit">ค้นหา 發送驗證碼</button>
-           -->
+
+
+
                     </div>
                 </div>
-                <label class="text-white">총<span class="red"> 0 </span>건, 제 0 건</label>
-                <div class="record-no text-center">
-                    <p>결제 내역이 없습니다.
-                        <!--沒有儲值紀錄-->
-                    </p>
-                </div>
+                <label class="text-white">총<span class="red"> 19 </span>건, 제 1-5 건</label>
 
-
-
-                <p class="font_notice mt-3">알림:<br>결제내역이 즉시 표시되지 않을 경우, 잠시 후 다시 확인해주세요. 30분 이상 결제 완료 내역이 갱신되지 않을 경우 고객센터로 문의해주시기 바랍니다.
-                    <!--注意事項：• 儲值紀錄如未即時更新，請於10-15分鐘後再重新整理頁面檢視，如仍未看到剛才完成儲值的儲值紀錄，請至客服中心提問由客服人員為您查詢確認-->
-                </p>
             </div>
         </div>
     </div>
     <!-- Footer -->
+    <!--此區塊webview需隱藏-->
     <footer class="py-4 footer-wrap pb-mob-70">
         <div class="container">
             <div class="row">

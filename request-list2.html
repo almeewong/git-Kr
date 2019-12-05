@@ -96,54 +96,58 @@
     <div class="col-sm-12 col-lg-8 text-white">
      <div class="breadcrumb-title">문의내역<!-- 儲值紀錄 --></div>
       <div class="d-sm-flex form-group">
-            <h5 class="text-md-right mobile-text-left mr-3 font-weight-bold">Ticket Number :<!--提問單號--></h5>
+            <h5 class="text-md-right mobile-text-left mr-3 font-weight-bold">문의계정<!--提問單號--></h5>
             <h5 class="text-md-right mobile-text-left">123456789012</h5>
       </div>
 	  <hr class="hrline mt-5">
       <div class="text-center mt-5 mb-3">
-        <button class="btn btn-danger record_open record_toggle">Expand to See More<i class="fas fa-chevron-down ml-2"></i><!--展開問題內容--></button>
+        <button class="btn btn-danger record_open record_toggle">문의내용 확인<i class="fas fa-chevron-down ml-2"></i><!--展開問題內容--></button>
       </div>
 	  <div class=" record_page">
-	  	<h5 class="mt-30 mb-20 font-weight-bold">Problem Description <!-- 問題內容--></h5>
+	  	<h5 class="mt-30 mb-20 font-weight-bold">문의내용 <!-- 問題內容--></h5>
 	  	<div class="form-row">
         <div class="col-md-4 mb-3">
-          <label class=" text-white">Item/Game<!-- 問題類型 --> </label>
-          <input type="text" class="form-control" placeholder="ปัญหาเกี่ยวกับเกม" disabled="disabled" >
+          <label class=" text-white">항목/게임<!-- 問題類型 --> </label>
+          <input type="text" class="form-control" placeholder="주사위의 잔영" disabled="disabled" >
         </div>
         <div class="col-md-4 mb-3">
-          <label class=" text-white">Server <!-- 伺服器 -->  </label>
-          <input type="text" class="form-control" placeholder="S1" disabled="disabled">
+          <label class=" text-white">서버<!-- 伺服器 -->  </label>
+          <input type="text" class="form-control" placeholder="1서버 [우리]" disabled="disabled">
         </div>
         <div class="col-md-4 mb-3">
-          <label class=" text-white">Character<!-- 角色--> </label>
-          <input type="text" class="form-control" placeholder="ABCD" disabled="disabled">
+          <label class=" text-white">캐릭터<!-- 角色--> </label>
+          <input type="text" class="form-control" placeholder="치뿌뿌에 뽀로로" disabled="disabled">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">문의종류<!-- 問題類型 -->  </label>
+          <input type="text" class="form-control" placeholder="게임이용" disabled="disabled">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">이메일<!-- Email -->  </label>
+          <input type="text" class="form-control" placeholder="hello@wegames.com.tw" disabled="disabled">
         </div>
         <div class="col-md-12 mb-3">
-          <label class=" text-white">Question Category<!-- 問題類型 -->  </label>
-          <input type="text" class="form-control" placeholder="BUG" disabled="disabled">
-        </div>
-        <div class="col-md-12 mb-3">
-          <label class=" text-white">Problem Description<!-- 問題描述 --> </label>
-          <textarea class="form-control" rows="5" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint iste quasi esse inventore beatae neque laborum. Enim optio dolorum ratione, tempora cum accusamus amet cupiditate iusto molestiae consequuntur, quis." disabled="disabled"></textarea>
+          <label class=" text-white">문의내용:<!-- 問題描述 --> </label>
+          <textarea class="form-control" rows="5" placeholder="문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용" disabled="disabled"></textarea>
         </div>
         <div class="col-md-12 mb-3 uploader">
-          <label class=" text-white">Related Screenshots <!-- 上傳相關圖片 --></label>
-		  <div class="red-point-no-small mb-5">(You have uploaded X images, to protect your privacy, images are not shown here)</div>
+          <label class=" text-white">스크린샷 <!-- 上傳相關圖片 --></label>
+		  <div class="red-point-no-small mb-5">(이미지 x장이 업로드 되었습니다. 개인정보 보호를 위해 이미지는 표시되지 않습니다.)</div>
         </div>
         <div class="col-sm-12 text-center">
           <div class="clearfix"></div>
-         <button class="btn btn-danger record_hide record_open">Close Problem Description<i class="fas fa-chevron-up pl-2"></i><!--收合問題內容--></button>
+         <button class="btn btn-danger record_hide record_open">문의내용 닫기<i class="fas fa-chevron-up pl-2"></i><!--收合問題內容--></button>
         </div>
       </div>
 	  </div>
 	  <hr class="hrline mt-5">
-	  <h5 class="mt-5 mb-4 font-weight-bold">Q&A Record<!-- 問答紀錄--></h5>
+	  <h5 class="mt-5 mb-4 font-weight-bold">문의 상태<!-- 問答紀錄--></h5>
 	  <div class="col-sm-12 pd20">
         <div class="row">
           <div class="mgb20"><span class="separator"></span> </div>
           <div class="col-sm-12" align="left">
             <div class="speech-bubble speech-bubble-left"> <span class=" alert-chat-role-red "> <i class="fa fa-user-circle fa-2x"></i> </span>
-              <p class="alert-chat-left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. <span><i class="fa fa-clock-o"></i> 2016/11/01 20:15</span></p>
+              <p class="alert-chat-left">내용내용내용내용내용내용내용내용내용내용내용내용<span><i class="fa fa-clock-o"></i> 2016/11/01 20:15</span></p>
             </div>
           </div>
           
@@ -151,7 +155,7 @@
           
           <div class="col-sm-12" align="right">
             <div class="speech-bubble speech-bubble-right" align="right"> <span class=" alert-chat-role-black "> <i class="fa fa-user-circle fa-2x"></i> </span>
-              <p class="alert-chat-right mgb20"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. (Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. )
+              <p class="alert-chat-right mgb20">내용내용내용내용내용내용내용내용내용내용내용내용( x 장의 이미지가 업로드 되었습니다. 개인정보 보호를 위해 이미지는 표시되지 않습니다. )
                 <span><i class="fa fa-clock-o"></i> 2016/11/01 23:45</span> </p>
             </div>
           </div>
@@ -160,7 +164,7 @@
         <!-- 客服人員將儘速為您處理問題，敬請耐心稍候。-->
         <div class="clearfix"></div>
       </div>
-      <p>Customer Support will help you as soon as possible, please be patient.<!-- 客服人員處理中。--></p>
+      <p>담당자가 내용 확인 중이오니 잠시만 기다려주시기 바랍니다.<!-- 客服人員處理中。--></p>
 	  <div class="clearfix"></div>
     </div>
   </div>

@@ -287,3 +287,19 @@ input::-webkit-input-placeholder {
 .pic-wrong{
     width: 200px;
 }
+/*Game-Operation-Policy*/
+table.Game-Operation-Policy{
+    font-size: .6rem;
+}
+.Game-Operation-Policy.table td,.Game-Operation-Policy.table th{
+    text-align: left!important;
+    padding: .2rem;
+}
+@media only screen and (max-width: 992px){
+    table.Game-Operation-Policy th:nth-of-type(1){
+    width: 15%;
+}
+    table.Game-Operation-Policy th:nth-of-type(2){
+    width: 30%;
+}
+}

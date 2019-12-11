@@ -288,10 +288,13 @@ input::-webkit-input-placeholder {
     width: 200px;
 }
 /*Game-Operation-Policy*/
-table.Game-Operation-Policy{
+table.Game-Operation-Policy,table.privacy{
     font-size: .6rem;
 }
-.Game-Operation-Policy.table td,.Game-Operation-Policy.table th{
+table.privacy th:nth-of-type(3){
+    width: 30%;
+}
+.Game-Operation-Policy.table td,.Game-Operation-Policy.table th,.privacy td,.privacy th{
     text-align: left!important;
     padding: .2rem;
 }
@@ -302,4 +305,9 @@ table.Game-Operation-Policy{
     table.Game-Operation-Policy th:nth-of-type(2){
     width: 30%;
 }
+}
+@media only screen and (min-width: 1200px){
+    table.payment-list th:nth-of-type(1),table.request-list th:nth-of-type(1){
+        width: 10%;
+    }
 }

@@ -27,19 +27,37 @@
 <body>
     <!-- Navigation -->
     <!--此區塊webview需隱藏-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black nav_ham fixed-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black index_nav_ham fixed-header fixed-header">
         <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
             <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">게임로비</a> </li>
-                    <li class="nav-item "> <a class="nav-link nav-style" href="coming_soon.html">최신소식</a> </li>
-                    <li class="nav-item"> <a class="nav-link nav-style ga_header_faq" href="faq.html">고객센터</a> </li>
-                    <li class="nav-item"> <a class="nav-link nav-style" href="coming_soon.html">WG 소개</a> </li>
+                    <li class="nav-item"><a class="nav-link nav-style ga_header_game" href="coming_soon.html">
+                            게임로비
+                            <!--遊戲大廳--></a> </li>
+                    <li class="nav-item "> <a class="nav-link nav-style ga_header_news" href="coming_soon.html">최신소식
+                            <!--最新消息-->
+                        </a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-style ga_header_faq" href="faq.html">
+                            고객센터
+                            <!--客服中心--></a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-style ga_header_about" href="coming_soon.html">WG 소개
+                            <!--關於WG--></a> </li>
+                </ul>
+                <ul class="navbar-nav ml-auto" style="display: none">
+                    <li class="nav-item"> <a class="nav-link nav-border ga_header_register" href="#">SIGN UP
+                            <!--註冊--></a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-border ga_header_login" href="#">LOG IN
+                            <!--登入--></a> </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link nav-border" href="coming_soon.html">가입</a> </li>
-                    <li class="nav-item"> <a class="nav-link nav-border" href="login_form.html">로그인</a> </li>
+                    <li class="nav-item account_pic hint--bottom" data-hint="efae6eafb2090378ad303d60b4dea208">
+                        <span class="nav-link loninsize" href="#">
+                            <span class="displyin">안녕하세요.</span>
+                        </span>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link nav-border mt-1" href="edit-account.html">가입<!--註冊--><span class="circle-gray"></span></a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-border mt-1" href="index.html">로그인<!--登入--></a> </li>
                 </ul>
             </div>
         </div>

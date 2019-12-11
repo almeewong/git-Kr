@@ -267,6 +267,10 @@ input::-webkit-input-placeholder {
     background-color: #b90004;
     color: white;
 }
+.a-red:hover{
+    color: white;
+    background-color: #ce4150;
+}
 
 /*login-form*/
 .btn.btn-google .google,.btn.btn-fb .fb{

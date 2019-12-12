@@ -1782,11 +1782,11 @@ a img:hover{
 
 /*--滑動效果套用payment1~5--*/
 
-/*-------------terms會員服務款--------------*/
+/*-------------policy-member會員服務款--------------*/
 .terms1 p{
     margin-top: 15px;
 }
-.terms .h4,.terms .h5{
+.policy-member .h4,.policy-member .h5{
     font-weight: 700;
 }
 
@@ -2018,7 +2018,7 @@ textarea:focus{
 .gray_02{
     color: #c3c3c3;
 }
-/*--------request-list--------*/
+/*--------qa-list--------*/
 
 /*--------------分頁按鈕----------------*/
 .page-item.active .page{

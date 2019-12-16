@@ -86,13 +86,13 @@
        
        <div class="form-row d-flex justify-content-center">
        
-        <div class="form-group col-md-7 text-left">
+        <div class="form-group col-7 col-md-7 text-left">
             <input type="text" class="form-control in_color" id="formGroupExampleInput" placeholder="휴대폰 번호를 입력하세요">
             <!--請輸入您的手機號碼--> 
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-5 col-md-3">
             <button class="col btn btn-secondary_yellow btn-2br">인증번호 발급 요청<!--索取驗證碼--></button>
-            <button class="col btn btn-secondary_yellow btn-2br" disabled>인증번호 재발송합니다.<br>（04:59）</button>
+            <button class="col btn btn-secondary_yellow btn-2br p-0" disabled>인증번호 재발송합니다.<br>（04:59）</button>
         </div>
         <div class="form-group col-md-10 text-left">
             <input type="text" class="form-control in_color" id="formGroupExampleInput" placeholder="발급된 인증번호를 입력하세요">
@@ -101,7 +101,7 @@
         <p class="red message mt-2"><i class="fas fa-exclamation-circle mr-1"></i>인증번호가 정확하지 않습니다.<!--錯誤訊息提示--></p>
         </div>
           <div class="clearfix"></div>
-          <button class="btn btn-primary1 mt-5 mb-3 pl-sm-5 pr-sm-5 ga_login_wg-login" type="submit">계정연동 완료<!--綁定帳號--></button>
+          <button class="btn btn-primary1 mt-5 mb-3 pl-sm-5 pr-sm-5 ga_login_wg-login" type="submit" onclick="location.href='member-bind-completed.html'">계정연동 완료<!--綁定帳號--></button>
         </div>
       </div>
         
@@ -131,7 +131,9 @@
 <!--/此區塊webview需隱藏-->
   
 <!--go top-->
-
+        <a href="" id="gotop">
+            <i class="fa fa-angle-up"></i>
+        </a>
   
   <!-- /.container --> 
 </footer>

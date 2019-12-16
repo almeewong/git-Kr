@@ -27,7 +27,7 @@
 <body>
     <!-- Navigation -->
     <!--此區塊webview需隱藏-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black index_nav_ham fixed-header fixed-header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black index_nav_ham fixed-header fixed-header">
         <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
             <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -48,7 +48,7 @@
                             <span class="displyin">안녕하세요.</span>
                         </span>
                     </li>
-                    <li class="nav-item"> <a class="nav-link nav-border mt-1" href="register_01.html">가입<!--註冊--><span class="circle-gray"></span></a> </li>
+                    <li class="nav-item"> <a class="nav-link nav-border mt-1" href="register_01.html">가입<!--註冊--></a></li>
                     <li class="nav-item"> <a class="nav-link nav-border mt-1" href="login_form.html">로그인<!--登入--></a> </li>
                 </ul>
             </div>
@@ -57,19 +57,14 @@
     <!--/此區塊webview需隱藏-->
     <!-- 麵包屑開始 -->
     <div class="breadcrumb-wrap mt-3">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                <li class="breadcrumb-item active">게임로비</li>
-            </ol>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="breadcrumb-title">
-                    게임로비
-                    <!-- 遊戲大廳-->
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li class="breadcrumb-item active">게임로비</li>
+    </ol>
+    <div class="breadcrumb-title">게임로비<!-- 遊戲大廳--></div>
+  </div>
+</div>
     <!-- 麵包屑結束 -->
 
     <!-- Page Content -->
@@ -178,6 +173,37 @@
             <!-- /.container -->
         </div>
     </div>
+    
+    <nav class="marbot120 d-flex justify-content-center mt-5">
+                    <ul class="pagination center">
+                        <li class="page-item">
+                            <a class="page-link page" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link page" href="#">
+                                <span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="page-item"><a class="page page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link page" href="#">2<span class="sr-only">(current)</span></a></li>
+                        <li class="page-item"><a class="page-link page" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link page" href="#" aria-label="Next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link page" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
 
 

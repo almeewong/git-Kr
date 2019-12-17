@@ -258,7 +258,10 @@ textarea {
 .game-center a{
     display: inline-block;
 }
-
+.game-title:hover{
+    color: #B90004;
+    transition: all .3s;
+}
 /*-------input-placeholder-------*/
 input::-webkit-input-placeholder {
     /* placeholder字体大小  */

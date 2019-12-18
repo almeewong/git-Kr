@@ -136,7 +136,7 @@
       </div>
 	  </div>
 	  <hr class="hrline mt-5">
-	  <h5 class="mt-5 mb-4 font-weight-bold">문의 상태<!-- 問答紀錄--></h5>
+	  <h5 class="mt-5 mb-4 font-weight-bold qa-record">문의 상태<!-- 問答紀錄--></h5>
 	   <div class="col-sm-12 pd20">
         <div class="row">
           <div class="mgb20"><span class="separator"></span> </div>
@@ -240,6 +240,11 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script src="js/all.js"></script> 
 <script src="js/all_Kr.js"></script> 
-
+<script>
+    /*-----頁面載入直接跳轉到與QA對話紀錄!(top - 88 是因為要扣掉header的高度)-----*/
+    $(document).ready(function () {
+        $('html,body').animate({scrollTop:$('.qa-record').offset().top - 88}, 500);
+    });
+</script>
 </body>
 </html>
